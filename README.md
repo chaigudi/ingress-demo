@@ -14,20 +14,17 @@ It includes a simple deployment, service, and ingress configuration to expose an
 
 1. **Start Minikube**
      minikube start
-     Enable Ingress Addon
-
-2. minikube addons enable ingress
-# This installs nginx ingress controller on minikube
-3. Deploy the Sample App
+2. **Enable Ingress Addon**
+        minikube addons enable ingress
+4. **Deploy the Sample App**
     kubectl apply -f deployment.yaml
     kubectl apply -f service.yaml
     kubectl apply -f ingress.yaml
-4. Verify Resources
+5. **Verify Resources**
     kubectl get pods
     kubectl get svc
     kubectl get ingress
-5. Access the App
-    Add the Minikube IP and hostname to your hosts file:
+6. **Add the Minikube IP and hostname to your hosts file:**
     <minikube-ip>  example.local
-
-6. curl http://example.local
+7. **Access the App**
+     curl http://example.local
