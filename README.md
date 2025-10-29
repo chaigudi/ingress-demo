@@ -30,4 +30,4 @@ It includes a simple deployment, service, and ingress configuration to expose an
     Add the Minikube IP and hostname to your hosts file:
     <minikube-ip>  example.local
 
-6  curl http://example.local
+6. curl http://example.local
